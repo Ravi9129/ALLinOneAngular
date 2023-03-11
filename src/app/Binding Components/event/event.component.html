@@ -1,0 +1,62 @@
+
+<!--Event Binding Example--------->
+
+<div>
+    <h1 [innerText]="title"></h1>
+ 
+    <h2>Example 1</h2>
+    <button (click)="clickMe()">Click Me</button>
+    <p>You have clicked {{clickCount}}</p>
+</div>
+
+
+<!------->
+<div>
+
+<h2>Example 2</h2>
+<button (click)="clickMe1() ; clickCount1=clickCount">Click Me</button>
+<p>You have clicked {{clickCount}}</p>
+<p>You have clicked {{clickCount1}}</p>
+
+</div>
+
+
+<!--event Payload  ----->
+<input (input)="handleInput($event)">
+<p>You have entered {{value}}</p>
+
+
+
+<!---Template reference variable---->
+<h2>Template Reference Variable</h2>
+<input #el (input)="handleInput1(el)">
+<p>You have entered {{val}}</p>
+
+
+
+
+
+
+
+<!---Key event filtering (with key.enter)---->
+
+<h2>Key event filtering (with key.enter)</h2>
+<input (keyup)="value1= $any($event.target).value" />
+<p>You entered {{value1}}</p>
+
+<input (keyup.enter)="value2=$any($event.target).value">
+<p>You entered {{value2}}</p>
+
+<input (keyup.enter)="value3=$any($event.target).value" (keyup.escape)="$any($event.target).value='';value3=''">
+<p>You entered {{value3}}</p>
+
+<input (keyup.control.shift.enter)="value4=$any($event.target).value">
+<p>You entered {{value4}}</p>
+
+
+
+
+
+<!------->
+<!------->
+<!------->

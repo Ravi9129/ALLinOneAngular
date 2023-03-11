@@ -1,0 +1,13 @@
+<div>
+    <button [ngStyle]="{'color':'red',  'font-weight': 'bold', 'font-size.px':20}">Click Me </button>
+  </div>
+
+  <br>
+  <div>
+    <button [ngStyle]="AddButtonCSSStyles()">Click Me </button>
+  </div>
+
+  <br>
+  <div *ngFor='let student of students'>
+    <span [ngStyle] ="{'background-color':student.Gender === 'Male' ? 'red' : 'green'}">Name : {{student.Name}}, Gender: {{student.Gender}}, Branch: {{student.Branch}}</span>       
+ </div>

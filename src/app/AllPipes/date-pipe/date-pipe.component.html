@@ -1,0 +1,20 @@
+
+<h3>Date Expression </h3>
+<p>Date Object : {{toDate | date}} </p>   
+<p>Number Date : {{numDate | date}} </p>     
+<p>ISO Date : {{strDate | date}} </p> 
+<p>Only mathematical date:{{toDate | date:'dd/MM/y'}}  </p>
+<p>date with time: {{toDate | date:'dd/MM/yy HH:mm'}}   </p>
+
+
+<br>
+<h3>
+
+  <p> Date in India (IST Time Zone)  : {{toDate | date:'short':'IST'}} </p>     
+ 
+ <p>Date  in USA (CDT Time Zone)   : {{toDate | date:'short':'CDT'}}</p>   
+ 
+ <p>Date in India (+0530)     : {{toDate | date:'short':'+0530'}}</p>   
+ <p>Date in USA (-0700)     : {{toDate | date:'short':'-0500'}}</p>  
+<p>British date time is {{toDate | date:'dd/MM/yy HH:mm':'GMT':'en-GB'}}</p>
+</h3>

@@ -1,0 +1,35 @@
+<p>ngmodelchange works!</p>
+<h2>https://stackblitz.com/edit/angularngmodelchange-change-event-in-angular?file=src%2Fapp%2Fapp.component.ts</h2>
+
+
+<div>
+    Name:
+    <input type="text" name="name" ngModel (ngModelChange)="nameChanged($event)">   
+</div>
+
+<!-------ng model------->
+<!-- <input type="text" name="email" [(ngModel)]="email">
+
+<input [ngModel]="email" (ngModelChange)="email = $event"> -->
+
+
+
+
+<!-------ngModelChange with ngModel------->
+<!-- <div>
+    <input [(ngModel)]="firstName" (ngModelChange)="firstNameChanged($event)"/>
+    <input [ngModel]="firstName (ngModelChange)="firstName = $event"   (ngModelChange)="firstNameChanged($event)"/>
+ 
+</div> -->
+
+
+
+<!-- <div>
+    <input (ngModelChange)="lastNameChanged($event)" [(ngModel)]="lastName"/>
+    <input (ngModelChange)="lastNameChanged($event)" [ngModel]="lastName" (ngModelChange)="lastName= $event"/>
+ 
+</div> -->
+
+
+
+

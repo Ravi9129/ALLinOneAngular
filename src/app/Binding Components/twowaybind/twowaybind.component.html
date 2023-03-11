@@ -1,0 +1,33 @@
+
+<h2>two way data binding</h2>
+<!-- <div>
+
+    <h2>Example 1</h2>
+    <input type="text" [value]="name" (input)="name=$event.target.value">
+    <p> You entered {{name}}</p>
+    <button (click)="clearName()">Clear</button>
+</div> -->
+
+
+<div>
+    <input type="text" name="value" [(ngModel)]="value">
+    <p> You entered {{value}}</p>
+    <button (click)="clearValue()">Clear</button>
+
+</div>
+
+
+<!----Custom Two-way binding----->
+<div>
+    <h2>Custom Two-way binding</h2>
+    <h2>Example 2</h2>
+    <p>
+      Count: {{ count }}
+      <button (click)="increment()">Increment</button>
+    </p>
+  </div>
+
+  <!-- <h2>Example 3</h2>
+  <counter [(count)]="count"></counter>
+  <p> Current Count {{count}}</p>
+  <button (click)="clearCount()">Clear</button> -->

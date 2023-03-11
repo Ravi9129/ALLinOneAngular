@@ -1,0 +1,73 @@
+<div>
+<p>Welcome To {{title}}</p>
+<p>{{'hello everyone '+' i am ravi rajput'}}</p>
+<p>{{firstname}},{{lastname}}</p>
+<!-- <p>Welcome {{getFirstName()}},{{getLastName()}}</p> -->
+</div>
+
+<!---------------------------------------->
+<div>
+<h3>Mathematics operator</h3>
+<p>100*80={{100*80}}</p>
+<!-- <p>largest:{{max(100,200)}}</p> -->
+
+    
+</div>
+<!---------------------------------------->
+<div>
+    <h3>Element property</h3>
+    <p>Show me <span class = "{{giveMeRed}}">red</span></p>
+<p style.color={{giveMeRed}}>This is red</p>
+</div>
+
+<!---------------------------------------->
+
+<div>
+<h3>image source</h3>
+    <div><img src="{{itemImageUrl}}"></div>
+</div>
+
+
+<div>
+    <h3>href</h3>
+    <!-- <a href="/product/{{productID}}">{{productName}}</a> -->
+</div>
+
+
+<div>
+    <h2>Template reference variable</h2>
+
+    <label>Enter Your Name</label>
+<input (keyup)="0" #name>
+<p>Welcome {{ name.value}} </p>
+</div>
+
+
+<!-- <div>
+    <h2>template</h2>
+    <p>items</p>
+<ul>
+
+  <li *ngFor="let d of items">
+    {{ d.name }}
+    </li>
+</ul>
+</div> -->
+
+
+<!-- <div>
+    <p>{{script}}</p>
+<p>{{div}}</p>
+ 
+//Component
+script ='<script>alert("You are hacked")</script>'
+div='<div>this is a div</div>';
+</div> -->
+
+
+<!-- <p>Evaluate: {{variable}}</p>
+<p ngNonBindable>Do not evaluate: {{variable}}</p>
+ 
+ 
+<p>Angular uses {{ variable }} syntax for Interpolation</p>
+<p ngNonBindable>Angular uses {{ variable }} syntax for Interpolation</p> -->

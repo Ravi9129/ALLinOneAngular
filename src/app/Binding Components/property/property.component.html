@@ -1,0 +1,71 @@
+
+
+<h3 [innerText]="title"></h3>
+<button [disabled]="isDisabled">I am disabled</button>
+<p [textContent]="evilText"></p> 
+
+
+
+<!-----------Attribute Binding-------------->
+
+ <div>
+<table border="1">
+  <tr>
+    <td>Col 1</td>
+    <td>Col 2</td>
+    <td>Col 3</td>
+  </tr>
+  <tr>
+      <td [attr.colspan]="2">Col 1 & 2</td> 
+      <td>Col 3</td>
+  </tr>
+  <tr>
+      <td>Col 1</td>
+      <td bind-attr.colspan = "getColspan()">Col 2 & 3 </td>
+  </tr>
+  <tr>
+      <td>Col 1</td>
+      <td>Col 2</td>
+      <td>Col 3</td>
+    </tr>
+  
+</table>
+<!-- <button [attr.aria-label]="closeLabel" (onclick)="closeMe()">X</button> -->
+ </div>
+
+
+
+ <!----Binding to innerHTML with HTML tags----->
+ <div>
+    <p [innerHTML]="text1"></p>
+<div [innerHTML]="text2"></div>
+ </div> 
+ 
+ 
+ <!-----img---->
+ <div>
+    <img [src]="itemImageUrl">
+<img bind-src="itemImageUrl">
+ </div>
+
+
+   <!-----Concatenate two string---->
+<div>
+    <p [innerText]="'Hello & Welcome to '+ ' Angular Data binding '"></p>
+</div>
+
+    <!---- Mathematical expressions----->
+     
+<p [innerText]="100*80"></p>
+    
+    
+    <!-----setting the color---->
+    <p [style.color]="color">This is red</p>
+
+
+      <!--------->
+       <!--------->
+        <!--------->
+         <!--------->
+          <!--------->
+           <!--------->

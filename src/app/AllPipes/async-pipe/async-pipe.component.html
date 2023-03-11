@@ -1,0 +1,35 @@
+<div *ngIf="(obsValue | async); else elseBlock">
+    {{ obsValue | async}}
+  </div>
+   
+  <ng-template #elseBlock>
+    Observable is loading. Please wait 
+  </ng-template>
+<!-------------------------------------------------->
+  <br>
+
+  <div *ngIf="(obsValue1 | async); else elseBlock">
+    {{ obsValue | async}}
+  </div>
+   
+  <ng-template #elseBlock>
+    Observable is loading. Please wait
+  </ng-template>
+   
+  <div *ngIf="(obsValue1 | async);">
+    observable has recevied data
+  </div>
+<br>
+
+
+<!-- <div *ngIf="(obsValue | async) as value; else elseBlock">
+    {{ value}}      //works only inside the If Block
+  </div>
+   
+  <ng-template #elseBlock>
+    Observable is loading. Please wait
+  </ng-template>
+   
+  {{ value}}   // will not work  -->
+   
+
